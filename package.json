@@ -9,13 +9,15 @@
     "dev": "vite --port 3334 --open",
     "build": "vite build",
     "typecheck": "vue-tsc",
+    "preview": "vite preview",
     "prettier": "prettier --write .",
     "sizecheck": "npx vite-bundle-visualizer",
     "prepare": "husky install",
     "eslint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "lint-staged --allow-empty --config ./lintstagedrc.json"
   },
   "dependencies": {
+    "antd": "^5.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
