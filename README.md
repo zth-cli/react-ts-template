@@ -1,27 +1,43 @@
-# React + TypeScript + Vite
+# React + Vite + TS空模板
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![截图](./public/screenshot.png)
 
-Currently, two official plugins are available:
+## 特性
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🌟 最新技术栈**：使用 React/Vite4 等前端前沿技术开发
+- **🌟 TypeScript**: 应用程序级 JavaScript 的语言
+- **🌟 TSX**: 开箱支持TSX语法
+- **🌟 自动引入**: 自动引入Reaxt及生态插件API, 开箱即用
+- **🌟 Eslint**: 统一规则执行代码检查, 发现潜在得代码错误
+- **🌟 Prettier**: 格式化代码,规范统一代码风格
+- **🌟 commitlint**: 规范git commit提交信息格,更清晰的查看每一次代码提交记录
 
-## Expanding the ESLint configuration
+## 安装使用
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**克隆或下载源码**
 
-- Configure the top-level `parserOptions` property like this:
+> 环境 node版本 >= 16, 建议项目使用pnpm包管理器,
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- 安装依赖
+
+```bash
+npm install pnpm -g
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+pnpm i
+```
+
+- 运行
+
+```bash
+# 运行主应用, 其他命令详见根目录package.json
+pnpm dev
+```
+
+- 打包
+
+```bash
+# 打包主应用, 其他命令详见根目录package.json
+pnpm build
+```
