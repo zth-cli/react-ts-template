@@ -17,33 +17,32 @@
     "lint": "lint-staged --allow-empty --config ./lintstagedrc.json"
   },
   "dependencies": {
-    "antd": "^5.20.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@eslint/js": "^9.9.0",
-    "@types/react": "^18.3.3",
+    "@eslint/js": "^9.9.1",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.0",
+    "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-react-refresh": "^0.4.11",
     "globals": "^15.9.0",
-    "husky": "^9.1.4",
+    "husky": "^9.1.5",
     "less": "^4.2.0",
     "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.2.0",
     "unplugin-auto-import": "^0.18.2",
-    "vite": "^5.4.1",
+    "vite": "^5.4.2",
     "vite-bundle-visualizer": "^1.2.1",
-    "vite-plugin-inspect": "^0.8.5"
+    "vite-plugin-inspect": "^0.8.7"
   }
 }

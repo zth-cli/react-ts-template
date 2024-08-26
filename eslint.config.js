@@ -7,7 +7,16 @@ import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 // https://www.cnblogs.com/jsonq/p/18357943
 export default [
-  { ignores: ['**/dist/**', '**/node_modules/**', '.history', 'public/'] },
+  {
+    ignores: [
+      '**/dist/**',
+      '**/node_modules/**',
+      '.history',
+      'public/',
+      '.prettierrc.cjs',
+      'commitlint.config.cjs'
+    ]
+  },
   js.configs.recommended, // eslint-config-prettier
   ...tseslint.configs.recommended, // eslint-config-prettier
   eslintPluginPrettierRecommended,
@@ -16,11 +25,13 @@ export default [
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh
-    }
-  },
-  {
+    },
+    languageOptions: {
+      ecmaVersion: 2023,
+      globals: globals.browser
+    },
     rules: {
-      // ...reactHooks.configs.recommended.rules,
+      ...reactHooks.configs.recommended.rules,
 
       'prettier/prettier': 'warn',
       'arrow-body-style': 'off',
