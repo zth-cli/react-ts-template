@@ -13,7 +13,7 @@ export default defineConfig({
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
         /\.md$/ // .md
       ],
-      imports: ['react', 'react-router'],
+      imports: ['react', 'react-router', 'ahooks'],
       eslintrc: {
         enabled: true, // 若没此json文件，先开启，生成后在关闭
         filepath: './.eslintrc-auto-import.json', // 默认
